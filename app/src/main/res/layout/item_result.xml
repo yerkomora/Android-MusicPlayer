@@ -45,40 +45,17 @@
                 android:layout_marginBottom="0dp"
                 android:text="@string/empty" />
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvArtist"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/tvMagnitude"
-                    style="@style/Base.TextAppearance.AppCompat.Small"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:text="@string/empty" />
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/tvPrice"
-                    style="@style/Base.TextAppearance.AppCompat.Small"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="0dp"
-                    android:layout_weight="1"
-                    android:text="@string/empty"
-                    android:textAlignment="textEnd"
-                    android:textColor="@color/secondaryColor"
-                    android:textStyle="bold" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
+                android:layout_weight="1"
+                android:text="@string/empty" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

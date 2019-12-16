@@ -3,13 +3,11 @@ package cl.infomatico.examples.musicplayer.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import cl.infomatico.examples.musicplayer.R
 import  cl.infomatico.examples.musicplayer.models.Result
 
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_result.view.*
 import kotlin.collections.ArrayList
 
@@ -38,7 +36,7 @@ class ResultAdapter : RecyclerView.Adapter<ResultAdapter.ViewHolder>() {
 
         holder.title.text = result.trackName
         holder.category.text = album
-        holder.magnitude.text = artist
+        holder.artist.text = artist
 
         holder.view.setOnClickListener { onListener.onClick(result, holder) }
     }
@@ -49,8 +47,7 @@ class ResultAdapter : RecyclerView.Adapter<ResultAdapter.ViewHolder>() {
 
         val title: AppCompatTextView = view.tvTitle
         val category: AppCompatTextView = view.tvCategory
-        val magnitude: AppCompatTextView = view.tvMagnitude
-        val price: AppCompatTextView = view.tvPrice
+        val artist: AppCompatTextView = view.tvArtist
     }
 
     fun setResults(results: ArrayList<Result>) {

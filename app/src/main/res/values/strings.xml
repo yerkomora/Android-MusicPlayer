@@ -1,13 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MusicPlayer</string>
 
-    <string name="action_search">Buscar</string>
+    <string name="action_search">Search</string>
 
-    <string name="search_hint">Buscar canciones</string>
+    <string name="search_hint">Search songs</string>
 
-    <string name="no_results">No hay resultados\npara su búsqueda.</string>
+    <string name="no_results">There is no result\nfor your search.</string>
     <string name="empty" />
 
-    <string name="album">Álbúm : </string>
-    <string name="artist">Artista : </string>
+    <string name="album">Album : </string>
+    <string name="artist">Artist : </string>
 </resources>

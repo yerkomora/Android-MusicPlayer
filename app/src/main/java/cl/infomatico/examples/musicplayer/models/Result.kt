@@ -1,15 +1,7 @@
 package cl.infomatico.examples.musicplayer.models
 
-class Result() {
-    // collection, track
-    var wrapperType: String = ""
-
-    // Album, song
-    var kind: String = ""
-
-    var artistId: Int = 0
+class Result {
     var collectionId: Int = 0
-    var trackId: Int = 0
 
     var artistName: String = ""
     var collectionName: String = ""

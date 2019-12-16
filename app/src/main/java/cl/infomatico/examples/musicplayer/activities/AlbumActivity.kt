@@ -49,7 +49,7 @@ class AlbumActivity : AppCompatActivity() {
                     llNoResultProducts.visibility = View.GONE
                 }
 
-                val album = results.get(0)
+                val album = results[0]
                 tvArtist.text = album.artistName
                 tvAlbum.text = album.collectionName
 

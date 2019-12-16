@@ -16,6 +16,7 @@ import cl.infomatico.examples.musicplayer.adapters.ResultAdapter
 import cl.infomatico.examples.musicplayer.models.Result
 import cl.infomatico.examples.musicplayer.network.ITunesApi
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.math.ceil
 
 class MainActivity : AppCompatActivity() {
 
@@ -150,7 +151,7 @@ class MainActivity : AppCompatActivity() {
                     srlProducts.visibility = View.VISIBLE
                 }
 
-                pages = Math.ceil(results.size / pageItems.toDouble()).toInt()
+                pages = ceil(results.size / pageItems.toDouble()).toInt()
                 this@MainActivity.results = ArrayList(results)
                 val subList = results.subList(0, pageItems)
 
@@ -176,7 +177,7 @@ class MainActivity : AppCompatActivity() {
         iTunesApi.search(object : ITunesApi.Listener {
             override fun load(results: List<Result>) {
 
-                pages = Math.ceil(results.size / pageItems.toDouble()).toInt()
+                pages = ceil(results.size / pageItems.toDouble()).toInt()
                 this@MainActivity.results = ArrayList(results)
                 val subList = results.subList(0, pageItems)
 
